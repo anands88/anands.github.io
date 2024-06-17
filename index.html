@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand S. - AI Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <a href="#"><i class="fas fa-robot"></i> Anand S.</a>
+            </div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -19,18 +23,20 @@
     </header>
 
     <main>
-        <section id="about">
-            <h1>Anand S.</h1>
-            <h2>AI Engineer</h2>
-            <p>Welcome to my personal website! I am an experienced AI Engineer with a passion for developing innovative solutions using artificial intelligence.</p>
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <h1>Anand S.</h1>
+                <h2>AI Engineer</h2>
+                <p>Welcome to my personal website! I am an experienced AI Engineer with a passion for developing innovative solutions using artificial intelligence.</p>
+            </div>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <ul>
+            <ul class="experience-list">
                 <li>
                     <h3>AI Engineer at Company XYZ</h3>
-                    <p>Date Range</p>
+                    <p class="date">Date Range</p>
                     <p>Responsibilities and achievements...</p>
                 </li>
                 <!-- Add more experience entries here -->
@@ -39,10 +45,15 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
+            <ul class="project-list">
                 <li>
-                    <h3>Project Name</h3>
-                    <p>Description of the project...</p>
+                    <div class="project-card">
+                        <img src="project-image.jpg" alt="Project Image">
+                        <div class="project-info">
+                            <h3>Project Name</h3>
+                            <p>Description of the project...</p>
+                        </div>
+                    </div>
                 </li>
                 <!-- Add more project entries here -->
             </ul>
@@ -60,7 +71,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
     </main>
